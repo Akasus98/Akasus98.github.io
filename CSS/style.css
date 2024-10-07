@@ -69,12 +69,12 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: auto;
     position: relative;
 }
 
 .nav__wrapper h1 {
-    color: #fff;
+    color: var(--text);
 }
 
 .menu {
@@ -100,13 +100,13 @@ li {
     cursor: pointer;
     position: absolute;
     right: 0;
-    top: 30px;
+    top: 15px;
 }
 
 .bar1,
 .bar2,
 .bar3 {
-    background: #fff;
+    background: var(--text);
     width: 35px;
     height: 5px;
     margin: 6px 0;
@@ -177,6 +177,11 @@ li {
     padding: 3rem 0;
 }
 
+.biography__wrapper {
+    border-bottom: 1px solid var(--text);
+    padding-bottom: 5rem;
+}
+
 .biography__header h2 {
     text-align: center;
 }
@@ -217,15 +222,17 @@ li {
 .skill {
     color: var(--text);
     background: var(--bg);
-    padding: 5rem 0 3rem 0;
+    padding-bottom: 3rem;
+}
+
+.skill__wrapper {
+    border-bottom: 1px solid var(--text);
+    padding-bottom: 2rem;
 }
 
 .skill__header h2 {
     text-align: center;
     color: var(--text);
-    background: #5677fc;
-    border-radius: 8px;
-    padding: 1rem 0;
 }
 
 .skill__wrapper ul {
@@ -241,7 +248,7 @@ li {
 
 /* certificate */
 .certificate {
-    padding: 5rem 0 3rem 0;
+    padding-bottom: 3rem;
 }
 
 .certificate__wrapper {
@@ -252,9 +259,7 @@ li {
 .certificate__wrapper h2 {
     text-align: center;
     color: var(--text);
-    background: var(--hover);
-    border-radius: 8px;
-    padding: 1rem 0;
+    padding-bottom: 1rem;
 }
 
 .certificate__image {
@@ -270,12 +275,11 @@ li {
 
 /* contact */
 .contact {
-    padding: 5rem 0;
+    padding-bottom: 3rem;
 }
 
 .contact__content h2 {
     color: var(--text);
-    padding: 1rem 0;
     text-align: center;
 }
 
@@ -324,6 +328,11 @@ li {
 }
 
 @media only screen and (max-width: 1200px) {
+    .container, .section__container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
     h2 {
         font-size: 1.2rem;
     }
@@ -332,11 +341,6 @@ li {
         flex-direction: column;
         align-items: flex-start;
         height: auto;
-        padding-top: 1rem;
-    }
-
-    .nav__logo h1 {
-        padding-bottom: 1rem;
     }
 
     .menu {
@@ -346,7 +350,7 @@ li {
 
     .menu li {
         margin: 0.5rem 0;
-        padding: 1rem 0 1rem 0;
+        padding: 0 0 1rem 0;
         transition: 0.3s;
     }
 
@@ -369,6 +373,11 @@ li {
 
     .work__content ul {
         margin: 0 1rem;
+    }
+
+    .skill__wrapper ul {
+        margin: 0;
+        line-height: 2;
     }
 
     .certificate__image {
