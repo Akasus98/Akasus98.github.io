@@ -195,6 +195,7 @@ li {
     width: 30rem;
     height: auto;
     border-radius: 8px;
+    border: 3px solid var(--hover);
 }
 
 .study h3 {
